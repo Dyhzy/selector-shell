@@ -32,7 +32,7 @@ a img {
 noscript h2 {
   width: 600px;
   color: red;
-  margin: 0 auto;
+  margin: 0 auto 1em;
   border: 1px solid red;
   padding: 7px;
 }
@@ -82,18 +82,33 @@ noscript h2 {
 }
 #cssh-footer ul {
   list-style: none;
-  margin: 0;
+  margin: 0 0 10px;
 }
 #cssh-footer li {
   display: inline;
   margin: 0 1em 0 0;
 }
-#cssh-dojo {
-  margin-left: 10px;
+
+.cssh-ir span {
+  position: absolute;
+  top: -9999px;
 }
-#cssh-dojo img {
-  position: relative;
-  top: 10px;
+#cssh-appengine {
+  background: url(/static/appengine-silver-120x30.gif) no-repeat;
+  border: 0;
+  display: inline-block;
+  margin: 0 auto;
+  width: 120px;
+  height: 30px;
+}
+
+#cssh-dojo {
+  background: url(/static/dojo.png) no-repeat;
+  border: 0;
+  display: inline-block;
+  margin: 0 auto 0 10px;
+  width: 40px;
+  height: 30px;
 }
 
 .class1,
@@ -105,3 +120,7 @@ noscript h2 {
   width: 20em;
   margin: 0 auto;
 }
+
+
+
+
