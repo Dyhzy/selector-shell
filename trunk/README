@@ -1,7 +1,7 @@
 This is a "shell" for testing what CSS selectors turn into.
- * It works by taking some raw text, inserting a dynamic STYLE element
- * into the HEAD with that raw text as its content, and then reading the
- * CSSOM to see what the browser has parsed it into.
+It works by taking some raw text, inserting a dynamic STYLE element
+into the HEAD with that raw text as its content, and then reading the
+CSSOM to see what the browser has parsed it into.
 
 =Selector Shell=
 
@@ -36,5 +36,5 @@ consistent with the original source.
 
 ==Contributors==
 
-Thanks to the Erik Arvidsson for his original code review of some of the
-relevant code here as well as the UX Webdev team at Google for testing.
+Thanks to the Erik Arvidsson for his original code review of parts of the
+relevant code here, as well as the UX Webdev team at Google for aid in testing.
