@@ -1,0 +1,138 @@
+<!doctype html>
+<!--
+Copyright 2009 Google Inc.   All Rights Reserved.
+Author: elsigh@google.com (Lindsey Simon)
+-->
+<html lang="en">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>Selector Shell</title>
+    <style>
+      @import "/static/selector-shell.css";
+    </style>
+  </head>
+  <body>
+    <div id="cssh">
+      <h1>Selector Shell</h1>
+      <div id="cssh-dir">
+        <h2>Directions</h2>
+        <ol id="cssh-dir">
+          <li>
+            Type/paste some handcrafted CSS into the first box.
+          </li>
+          <li>
+            Click the "Test It" button.
+          </li>
+          <li>
+            The second box shows what your browser
+            <a href="http://dev.w3.org/csswg/cssom/">makes of it</a>.
+          </li>
+        </ol>
+      </div>
+      <noscript>
+        <h2>
+          Sorry, but there's not a backend for CSS Selector Shell, so the
+          functionality is pure Javascript. Therefore, it doesn't have a
+          degradation path at the moment, other than my apology.
+        </h2>
+      </noscript>
+
+      <input
+        id="cssh-tryme-text"
+        type="hidden"
+        value="
+body .class1 {
+  border-color: black;
+}
+/* Gecko hack. */
+@-moz-document url-prefix() {
+  body .class1 { border-color: orange; }
+}
+/* Pre IE7 hack. */
+* html body .class1 {
+  border-color: green;
+}
+/* IE7 hack. */
+body .class1 {
+  *border-color: purple;
+}
+/* Webkit hack. */
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  body .class1 { border-color: red; }
+}
+.class1, .class2 {
+  color: purple;
+}
+/* Direct child selector. */
+.class1 > .class2 {
+  color: red;
+}
+/* Combined selector. */
+.class1.class2 {
+  color: blue;
+  color: orange;
+}">
+      <div id="cssh-widget">
+        <div class="cssh-c">
+          <textarea
+            id="cssh-shell" name="cssh-shell"></textarea>
+          <div id="cssh-tryme">
+            Try Me!
+          </div>
+        </div>
+        <div id="cssh-translate-c" class="cssh-c">
+          <input
+            id="cssh-translate" type="button" value="Test It" />
+        </div>
+        <div class="cssh-c">
+          <textarea
+            id="cssh-translation" name="cssh-translation"></textarea>
+        </div>
+      </div>
+
+      <div class="class1 class2">
+        div class="class1 class2"
+        <div class="class2">
+          div class="class2"
+        </div>
+      </div>
+
+      <div id="cssh-footer">
+        <ul>
+          <li>
+            <a href="http://code.google.com/p/selector-shell/">Source code</a>
+          </li>
+          <li>
+            Author: Lindsey Simon
+            &lt;elsigh@google.com&gt;
+          </li>
+        </ul>
+        <a href="http://code.google.com/appengine"><img
+              src="/static/appengine-silver-120x30.gif"
+              alt="Powered By Google App Engine"></a>
+
+        <a id="cssh-dojo" href="http://dojotoolkit.org/"><img
+              src="/static/dojo.png"
+              alt="Powered By Dojo"></a>
+      </div>
+    </div>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/dojo/1.2/dojo/dojo.xd.js"></script>
+    <script src="static/selector-shell.js"></script>
+    <script>
+      (function() {var s = new SelectorShell();})();
+    </script>
+
+    <script type="text/javascript">
+      var gaJsHost = (('https:' == document.location.protocol) ? 'https://ssl.' : 'http://www.');
+      document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+    </script>
+    <script type="text/javascript">
+      try {
+      var pageTracker = _gat._getTracker('UA-6802764-1');
+      pageTracker._trackPageview();
+      } catch(err) {}
+    </script>
+  </body>
+</html>
+
