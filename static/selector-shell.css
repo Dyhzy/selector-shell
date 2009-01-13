@@ -82,7 +82,7 @@ noscript h2 {
 }
 #cssh-footer ul {
   list-style: none;
-  margin: 0 0 1.5em;
+  margin: 0;
 }
 #cssh-footer li {
   display: inline;
