@@ -30,13 +30,6 @@ SelectorShell.prototype.createShell_ = function() {
   this.shell_ = dojo.byId('cssh-shell');
 
   /**
-   * @type {string}
-   * @private
-   */
-  this.tryMeCssText_ = dojo.byId('cssh-tryme-text').value.
-      replace(/^[\r\n]*/, '');
-
-  /**
    * @type {Element}
    * @private
    */
@@ -49,32 +42,6 @@ SelectorShell.prototype.createShell_ = function() {
    */
   this.result_ = dojo.byId('cssh-translation');
   this.result_.value = '';
-
-  var tryMe = dojo.byId('cssh-tryme');
-  dojo.connect(tryMe, 'click', this, 'setTryMeCss_');
-
-  window.setTimeout(dojo.hitch(this, 'focusAndSelect_'), 10);
-};
-
-
-/**
- * Shows some "Try Me" css for an example.
- * @param {Event} e The browser event.
- * @private
- */
-SelectorShell.prototype.setTryMeCss_ = function(e) {
-  this.shell_.value = this.tryMeCssText_;
-};
-
-
-/**
- * Focuses and selects the shell.
- * @param {Event} e The browser event.
- * @private
- */
-SelectorShell.prototype.focusAndSelect_ = function(e) {
-  this.shell_.focus();
-  this.shell_.select();
 };
 
 

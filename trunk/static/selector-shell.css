@@ -67,12 +67,6 @@ noscript h2 {
   font-weight: bold;
 }
 
-#cssh-tryme {
-  cursor: pointer;
-  text-decoration: underline;
-  color: #00c;
-}
-
 #cssh-footer {
   text-align: center;
   margin-top: 50px;
