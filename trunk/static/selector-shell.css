@@ -16,6 +16,7 @@ h1 {
 h2 {
   margin-top: 1px;
   margin-bottom: 0;
+  font-size: 1.2em;
 }
 textarea {
   height: 27em;
@@ -38,14 +39,14 @@ noscript h2 {
 }
 
 #cssh-dir {
-  width: 37em;
+  width: 38em;
   text-align: left;
-  margin: 0 auto 1em;
+  margin: 0 auto 10px;
 }
 #cssh-dir ol {
   list-style-position: inside;
-  padding: .3em;
-  margin-top: 0;
+  padding: 0;
+  margin: 0;
 }
 #cssh-toy {
   margin: 0 auto .8em;
