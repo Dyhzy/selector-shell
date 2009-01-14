@@ -37,10 +37,11 @@ Author: elsigh@google.com (Lindsey Simon)
         </h2>
       </noscript>
 
-      <input
-        id="cssh-tryme-text"
-        type="hidden"
-        value="
+      <div id="cssh-widget">
+        <div class="cssh-c">
+          <textarea
+            id="cssh-shell" name="cssh-shell">
+/* Some example CSS */
 body .class1 {
   border-color: black;
 }
@@ -71,14 +72,8 @@ body .class1 {
 .class1.class2 {
   color: blue;
   color: orange;
-}">
-      <div id="cssh-widget">
-        <div class="cssh-c">
-          <textarea
-            id="cssh-shell" name="cssh-shell"></textarea>
-          <div id="cssh-tryme">
-            Try Me!
-          </div>
+}
+          </textarea>
         </div>
         <div id="cssh-translate-c" class="cssh-c">
           <input
