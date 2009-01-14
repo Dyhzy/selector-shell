@@ -69,7 +69,7 @@ noscript h2 {
 
 #cssh-footer {
   text-align: center;
-  margin-top: 50px;
+  margin-top: 20px;
   border-top: 1px solid #ccc;
   padding-top: 10px;
   font-size: 80%;
@@ -105,6 +105,12 @@ noscript h2 {
   height: 30px;
 }
 
+/* Example block */
+h3 {
+  color: gold;
+  display: block;
+  margin: 0 auto 2px;
+}
 .class1,
 .class2 {
   padding: 5px;
