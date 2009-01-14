@@ -38,7 +38,7 @@ noscript h2 {
 }
 
 #cssh-dir {
-  width: 30em;
+  width: 37em;
   text-align: left;
   margin: 0 auto 1em;
 }
@@ -47,12 +47,12 @@ noscript h2 {
   padding: .3em;
   margin-top: 0;
 }
-#cssh-widget {
-  margin: 0 auto;
+#cssh-toy {
+  margin: 0 auto .8em;
   width: 52em;
   overflow: auto;
 }
-#cssh-widget .cssh-c {
+#cssh-toy .cssh-c {
   float: left;
   text-align: left;
   zoom: 1;
