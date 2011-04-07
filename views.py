@@ -27,8 +27,9 @@ DEBUG = True
 
 def selector_shell(request):
   """ """
-
-  params = {}
+  params = {
+    'quirks': request.REQUEST.__contains__('quirks')
+  }
   return respond(request, 'selector_shell.html', params)
 
 
